@@ -17,6 +17,9 @@ function App() {
     setError(null);
   };
 
+  const api = import.meta.env.VITE_API_URL
+
+
   const handleAnalyze = async () => {
     if (!file) return;
 
