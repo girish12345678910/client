@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Particles from './components/Particles';
 import './App.css';
 
-
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
 function App() {
   const [file, setFile] = useState(null);
@@ -17,7 +17,7 @@ function App() {
     setError(null);
   };
 
-  const api = import.meta.env.VITE_API_URL
+ 
 
 
   const handleAnalyze = async () => {
