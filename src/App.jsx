@@ -2,7 +2,9 @@ import { useState } from 'react';
 import Particles from './components/Particles';
 import './App.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const API_URL = 'https://server-djlr.onrender.com'|| 'http://localhost:3001';
+console.log('API URL:', API_URL);
+
 
 function App() {
   const [file, setFile] = useState(null);
